@@ -46,7 +46,7 @@ export const Footer: FC = () => {
         </Grid>
         <Box mt={5}>
           <TypographyStyled variant="body2" color="text.secondary" align="center">
-            {`Copyright © Crypto Tracker ${new Date().getFullYear()}`}
+            {`Copyright © Pokeapi App ${new Date().getFullYear()}`}
           </TypographyStyled>
         </Box>
       </Container>
