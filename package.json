@@ -1,6 +1,7 @@
 {
   "name": "pokeapi-app",
   "version": "0.1.0",
+  "homepage": "https://TarasGShevchenko.github.io/pokeapi-app",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.11.1",
@@ -30,7 +31,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -56,6 +59,7 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.23.2",
+    "gh-pages": "^6.0.0",
     "prettier": "^2.3.0"
   }
 }
