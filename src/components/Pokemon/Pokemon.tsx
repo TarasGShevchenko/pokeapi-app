@@ -84,7 +84,7 @@ export const Pokemon: FC = () => {
   return (
     <Container>
       <Title>
-        {pokemon?.name.toUpperCase()}
+        {!!pokemon && pokemon?.name.toUpperCase()}
         {!!pokemon?.sprites?.front_default ? (
           <ImageTitle alt={pokemon?.name} src={pokemon?.sprites?.front_default} />
         ) : (
