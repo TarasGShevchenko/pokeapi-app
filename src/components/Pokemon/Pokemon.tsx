@@ -57,10 +57,6 @@ const Stats = styled('div')(() => ({
   width: '100%',
   maxWidth: 1024,
 }))
-const BoxStyled = styled(Box)(({ theme }) => ({
-  color: theme.palette.text.secondary,
-  fontSize: 32,
-}))
 
 export const Pokemon: FC = () => {
   const { name } = useParams()
@@ -83,14 +79,16 @@ export const Pokemon: FC = () => {
 
   return (
     <Container>
-      <Title>
-        {!!pokemon && pokemon?.name.toUpperCase()}
-        {!!pokemon?.sprites?.front_default ? (
-          <ImageTitle alt={pokemon?.name} src={pokemon?.sprites?.front_default} />
-        ) : (
-          <BoxStyled ml={2}>{`#${pokemon?.id}`}</BoxStyled>
-        )}
-      </Title>
+      {!!pokemon && (
+        <Title>
+          {pokemon?.name.toUpperCase()}
+          {!!pokemon?.sprites?.front_default ? (
+            <ImageTitle alt={pokemon?.name} src={pokemon?.sprites?.front_default} />
+          ) : (
+            <Box ml={2}>{`#${pokemon?.id}`}</Box>
+          )}
+        </Title>
+      )}
       {loading && <Progress />}
       {pokemon && (
         <Wrapper>
