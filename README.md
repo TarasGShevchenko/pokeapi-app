@@ -1,6 +1,6 @@
 # Home page 
 
-### Open [https://TarasGShevchenko.github.io/pokeapi-app](https://TarasGShevchenko.github.io/pokeapi-app)
+### Open [https://pokeapi-app-ashen.vercel.app/](https://pokeapi-app-ashen.vercel.app/)
 
 # Getting Started
 
